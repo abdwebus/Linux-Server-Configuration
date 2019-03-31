@@ -28,16 +28,6 @@
 * Cloned Item Catalog project to the server
 * Updated console.cloud.google account with the new information
 
-## Challenges
-
-Login functionality won't work, google sign in button won't appear. Apache error.log doesn't show any error.
-However, the browser console show below error
-```
-[Error] The source list for Content Security Policy directive 'script-src' contains an invalid source: ''strict-dynamic''. It will be ignored.
-[Error] The source list for Content Security Policy directive 'script-src' contains an invalid source: ''strict-dynamic''. It will be ignored.
-https://plus.google.com/_/widget/render/signin?usegapi=1&scope=openid+email&clientid=1006081047827-0cu5n09g26engs2feit5te0v9eov84fm.apps.googleusercontent.com&redirecturi=postmessage&accesstype=offline&cookiepolicy=single_host_origin&approvalprompt=force&origin=http://ec2-34-210-67-78.us-west-2.compute.amazonaws.com&url=http://ec2-34-210-67-78.us-west-2.compute.amazonaws.com/login&gsrc=3p&ic=1&jsh=m;/_/scs/apps-static/_/js/k%3Doz.gapi.en_US.k075T-KPfhg.O/am%3DwQ/rt%3Dj/d%3D1/rs%3DAGLTcCPwAoUJo6Gd1t5JO7oWH71meRocYw/m%3D__features__#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conauth%2Conload&id=I0_1554071445290&_gfid=I0_1554071445290&parent=http%3A%2F%2Fec2-34-210-67-78.us-west-2.compute.amazonaws.com&pfname=&rpctoken=38951306
-[Error] Failed to load resource: the server responded with a status of 404 () (signin, line 0)
-```
 
 ## Notes to Reviewer
 
@@ -73,6 +63,23 @@ ld+G+YXNnXgdweBZAAAAIGFiZWQtbWFjQEFiZWRzLU1hY0Jvb2stUHJvLmxvY2FsAQI=
 
 ### Entry to login as grader
 
-Assumming SSH key is saved in ```udacityGrader```
+Assumming SSH key is saved in ```udacityGrader``` <br />
 ```ssh grader@34.210.67.78 -p2200 -i ~/.ssh/udacityGrader```
 
+
+
+## Challenges
+
+Login functionality won't work, google sign in button won't appear. Apache error.log doesn't show any error.
+However, the browser console show below error
+```
+[Error] The source list for Content Security Policy directive 'script-src' contains an invalid source: ''strict-dynamic''. It will be ignored.
+[Error] The source list for Content Security Policy directive 'script-src' contains an invalid source: ''strict-dynamic''. It will be ignored.
+https://plus.google.com/_/widget/render/signin?usegapi=1&scope=openid+email&clientid=1006081047827-0cu5n09g26engs2feit5te0v9eov84fm.apps.googleusercontent.com&redirecturi=postmessage&accesstype=offline&cookiepolicy=single_host_origin&approvalprompt=force&origin=http://ec2-34-210-67-78.us-west-2.compute.amazonaws.com&url=http://ec2-34-210-67-78.us-west-2.compute.amazonaws.com/login&gsrc=3p&ic=1&jsh=m;/_/scs/apps-static/_/js/k%3Doz.gapi.en_US.k075T-KPfhg.O/am%3DwQ/rt%3Dj/d%3D1/rs%3DAGLTcCPwAoUJo6Gd1t5JO7oWH71meRocYw/m%3D__features__#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conauth%2Conload&id=I0_1554071445290&_gfid=I0_1554071445290&parent=http%3A%2F%2Fec2-34-210-67-78.us-west-2.compute.amazonaws.com&pfname=&rpctoken=38951306
+[Error] Failed to load resource: the server responded with a status of 404 () (signin, line 0)
+```
+
+### Google configurations
+
+![](images/image1.png)
+![](images/image2.png)
